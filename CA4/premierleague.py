@@ -49,10 +49,9 @@ dataset.groupby('club')['nationality'].nunique().plot.bar(x='club', y='nationali
 #Count Nationalities in Premier League (sorted By the higher number of Nacionalities)
 dataset.nationality.value_counts().head(10)
 
-#Count Nationalities in Premier League (sorted By the higher number of Nacionalities)
+# Plot Top 10 Count Nationalities in Premier League 
 dataset.nationality.value_counts().head(10).plot.pie()
 
-# Plot Top 10 Count Nationalities in Premier League 
-dataset.groupby('nationality')['name'].nunique().plot.pie(x='naionality', y='names')
+
 
 
